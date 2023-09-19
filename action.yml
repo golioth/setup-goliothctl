@@ -8,7 +8,6 @@ inputs:
   apiKey:
     description: "The API Key generated via goliothctl or web console"
     required: true
-    # default: ${{ secrets.apiKey }}
   projectId:
     description: "Project ID to use."
     required: false
@@ -22,5 +21,5 @@ runs:
       shell: bash
     - run: sudo apt install goliothctl
       shell: bash
-    - run: goliothctl login --apiKey notMyApiKey
+    - run: goliothctl login --apiKey ${{ inputs.apiKey }}
       shell: bash
