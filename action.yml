@@ -1,1 +1,13 @@
+name: "Setup goliothctl"
+description: "Download and login to the Golioth CLI (goliothctl)"
+branding:
+  icon: cpu
+  color: green
 
+inputs:
+  apiKey:
+    description: The API Key generated via goliothctl or web console.
+    required: true
+  projectId:
+    description: Project ID to use.
+    required: false
