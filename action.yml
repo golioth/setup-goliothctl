@@ -10,7 +10,7 @@ inputs:
     required: true
   projectId:
     description: "Project ID to use."
-    required: false
+    required: true
 
 runs:
   using: "composite"
