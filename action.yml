@@ -21,6 +21,6 @@ runs:
     - run: sudo apt update
       shell: bash
     - run: sudo apt install goliothctl
-      shell: sudo apt install goliothctl
+      shell: bash
     - run: goliothctl login --apiKey notMyApiKey
       shell: bash
