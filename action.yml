@@ -21,5 +21,5 @@ runs:
       shell: bash
     - run: sudo apt install goliothctl
       shell: bash
-    - run: goliothctl login --apiKey ${{ inputs.apiKey }}
+    - run: goliothctl login --apiKey ${{ inputs.apiKey }} --projectId ${{ inputs.projectId }}
       shell: bash
