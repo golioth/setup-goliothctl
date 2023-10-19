@@ -9,8 +9,11 @@ Use [`goliothctl`](https://docs.golioth.io/reference/command-line-tools/goliothc
 To install the latest version of the Golioth CLI:
 
 ```yaml
+- name: Checkout
+  uses: actions/checkout@v4
+
 - name: Setup Golioth CLI
-  uses: goliothlabs/setup-goliothctl@main
+  uses: golioth/setup-goliothctl@main
   with:
     apiKey: ${{ secrets.APIKEY }}
     projectId: ${{ secrets.PROJECTID }}
