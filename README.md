@@ -2,7 +2,7 @@
 
 # setup-goliothctl
 
-Use [`goliothctl`](https://docs.golioth.io/reference/command-line-tools/goliothctl/goliothctl/), the Golioth CLI, from GitHub Actions. This action can be used to directly call the CLI as well as use in other actions.
+Use [`goliothctl`](https://docs.golioth.io/reference/command-line-tools/goliothctl/goliothctl/), the Golioth CLI, from GitHub Actions. This action can be used to directly call the CLI or used in other actions.
 
 # ✨ Quickstart
 
@@ -25,5 +25,5 @@ The action requires a Golioth API Key and Project ID. Refer to the Golioth [docu
 
 | Parameter | Description | Required |
 | --- | --- | --- |
-| apiKey | The API Key generated via goliothctl or web console | Yes | 
-| projectId | Project ID to use | Yes |
+| apiKey | The API Key generated via goliothctl or web console. | Yes | 
+| projectId | Project ID to use. | Yes |
