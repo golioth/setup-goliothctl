@@ -17,6 +17,9 @@ To install the latest version of the Golioth CLI:
   with:
     apiKey: ${{ secrets.APIKEY }}
     projectId: ${{ secrets.PROJECTID }}
+
+- name: List devices
+  run: goliothctl device list
 ```
 
 The action requires a Golioth API Key and Project ID. Refer to the Golioth [documentation](https://docs.golioth.io/) for to generate an API Key and retrieve a Project ID. Settings these values as [repository secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) is recommended.
